@@ -1,0 +1,44 @@
+{
+  "name": "socket-lab",
+  "version": "1.0.0",
+  "description": "A terminal-first Socket.IO client for local server testing.",
+  "type": "module",
+  "bin": {
+    "socket-lab": "./bin/socket-lab.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node ./bin/socket-lab.js",
+    "check": "node --check ./bin/socket-lab.js && node --check ./src/cli.js && node --check ./src/repl.js && node --check ./src/socket.js && node --check ./src/utils.js && node --check ./src/logger.js && node --check ./src/commands/index.js && node --check ./test-server/server.js",
+    "test-server": "node ./test-server/server.js"
+  },
+  "keywords": [
+    "socket.io",
+    "socket.io-client",
+    "websocket",
+    "cli",
+    "terminal",
+    "repl",
+    "testing",
+    "debugging"
+  ],
+  "author": "Shashwat",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
+  }
+}
