@@ -4,7 +4,7 @@
   "description": "A terminal-first Socket.IO client for local server testing.",
   "type": "module",
   "bin": {
-    "socket-lab": "./bin/socket-lab.js"
+    "socket-lab": "bin/socket-lab.js"
   },
   "publishConfig": {
     "access": "public"
