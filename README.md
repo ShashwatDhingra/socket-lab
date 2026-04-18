@@ -2,6 +2,22 @@
 
 A terminal-first CLI for testing Socket.IO servers locally.
 
+GitHub repository: [ShashwatDhingra/socket-lab](https://github.com/ShashwatDhingra/socket-lab)
+
+`socket-lab` gives you a simple interactive REPL for connecting to a Socket.IO server, joining rooms, sending messages, and watching live events from the terminal.
+
+## Features
+
+- Connect to Socket.IO servers from the terminal
+- Join, switch, and leave rooms interactively
+- Send chat-style messages directly from the REPL
+- Inspect events with built-in debug commands
+- Use the included local test server for quick development
+
+## Requirements
+
+- Node.js 18 or newer
+
 ## Install
 
 ```bash
@@ -20,11 +36,28 @@ npx socket-lab connect http://localhost:3000
 socket-lab connect http://localhost:3000
 ```
 
+If you are developing this project locally:
+
+```bash
+npm install
+npm start -- connect http://localhost:3000
+```
+
 The REPL is chat-native:
 
 - Slash commands drive control flow, for example `/join backend-room`
 - Plain text is sent directly to the active room
 - The prompt shows your active identity and room context
+
+## Example Session
+
+```bash
+socket-lab connect http://localhost:3000
+/nick john
+/join backend-room
+hello from terminal one
+/status
+```
 
 ## Local Test Server
 
@@ -61,6 +94,26 @@ hello from terminal two
 ```
 
 Both terminals will receive the shared `room_message` and `room_system` events.
+
+## Development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the syntax check:
+
+```bash
+npm run check
+```
+
+Start the local test server:
+
+```bash
+npm run test-server
+```
 
 ## Slash Commands
 

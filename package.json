@@ -32,6 +32,14 @@
   ],
   "author": "Shashwat",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShashwatDhingra/socket-lab.git"
+  },
+  "homepage": "https://github.com/ShashwatDhingra/socket-lab#readme",
+  "bugs": {
+    "url": "https://github.com/ShashwatDhingra/socket-lab/issues"
+  },
   "engines": {
     "node": ">=18"
   },
