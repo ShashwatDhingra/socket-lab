@@ -6,6 +6,8 @@ GitHub repository: [ShashwatDhingra/socket-lab](https://github.com/ShashwatDhing
 
 `socket-lab` gives you a simple interactive REPL for connecting to a Socket.IO server, joining rooms, sending messages, and watching live events from the terminal.
 
+![socket-lab banner](https://raw.githubusercontent.com/ShashwatDhingra/Files/main/socket-lab-readme.png)
+
 ## Features
 
 - Connect to Socket.IO servers from the terminal
@@ -142,3 +144,17 @@ Advanced transport/debug commands still exist for power users:
 - All incoming events are logged with a global `onAny()` listener.
 - Session logs are persisted to `.socket-lab.log` in the current working directory.
 - Command and event-name autocomplete is available in the REPL.
+
+## Contributor
+
+This package is maintained by:
+
+<table style="border: none; border-collapse: collapse; margin-left: 18px;">
+  <tr style="border: none;">
+    <td align="center" width="60" style="border: none; padding: 0;">
+      <img src="https://raw.githubusercontent.com/ShashwatDhingra/Files/refs/heads/main/profile-cropped.JPG" width="45" height="45" style="border-radius: 50%;" />
+      <br>
+      <b><a href="https://www.linkedin.com/in/shashwat-dhingra-0792b1236/">Shashwat</a></b>
+    </td>
+  </tr>
+</table>
